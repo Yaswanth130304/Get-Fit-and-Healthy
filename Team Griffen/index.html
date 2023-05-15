@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Get Fit and Healthy</title>
+  </head>
+  <body>
+    <section class="body">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Get Fit and Healthy</a></div>
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./forms.html">Check Diabetes</a></li>
+                <li><a href="./contact.html">contact us</a></li>
+               
+            </ul>
+            <a href="#" class="action_btn"> Get started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./forms.html">Check Diabetes</a></li>
+            <li><a href="./contact.html">contact us</a></li>
+           
+            <li><a href="#" class="action_btn"> Get started</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p> ,<br> Lorem, ipsum dolor sit amet psum dolorum. Voluptatibus <br> Enim, doloremque
+               blanditiis.
+            </p>
+        </section>
+    </main>
+    </section>
+    
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open' )
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            :  'fa-solid fa-bars'
+        }
+    </script>
+  </body>
+</html>
